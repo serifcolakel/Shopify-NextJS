@@ -6,7 +6,7 @@ import { formatter } from './../utils/helpers';
 import { XIcon } from '@heroicons/react/outline';
 export default function Example({ cart }) {
     const cancelButtonRef = useRef(null);
-    const { cartOpen, setCartOpen, checkoutUrl } = useContext(CartContext);
+    const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } = useContext(CartContext);
     let cartTotal = 0;
     cart.map(item => {
         return (cartTotal += item?.variantQuantity * item?.variantPrice)
@@ -82,13 +82,16 @@ export default function Example({ cart }) {
                                                                         </h3>
                                                                         <p className="ml-4">{formatter.format(product.variantPrice)}</p>
                                                                     </div>
-                                                                    <p className="mt-1 text-sm text-gray-500">{product.variantQuantity}</p>
+                                                                    <p className="mt-1 text-sm text-gray-500">{product.variantTitle}</p>
                                                                 </div>
                                                                 <div className="flex-1 flex items-end justify-between text-sm">
-                                                                    <p className="text-gray-500">Qty {product.quantity}</p>
+                                                                    <p className="text-gray-500">Quantity : {product.variantQuantity}</p>
 
                                                                     <div className="flex">
-                                                                        <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                                                        <button
+                                                                            onClick={() => removeCartItem(product.id)}
+                                                                            type="button"
+                                                                            className="font-medium text-indigo-600 hover:text-indigo-500">
                                                                             Remove
                                                                         </button>
                                                                     </div>
