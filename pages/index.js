@@ -14,8 +14,8 @@ export default function Home({ products }) {
         <meta name="description" content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more." />
         <meta property="og:title" content="Serif Colakel Shopify" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.buildnextshop.com" />
-        <meta property="og:image" content="https://www.buildnextshop.com/share.png" />
+        <meta property="og:url" content="https://serifcolakel.vercel.app/" />
+        <meta property="og:image" content="https://i.hizliresim.com/a27dhrh.jpg" />
         <meta property="og:description"
           content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more." />
         <meta property="og:locale" content="en_US" />
