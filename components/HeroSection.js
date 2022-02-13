@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 export default function HeroSection() {
     return (
@@ -11,10 +10,10 @@ export default function HeroSection() {
                 Build the eCommerce Revolution.
             </h2>
             <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
-                <a href="https://buildnextshop.com" className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-900 hover:bg-gray-800">
+                <a href="https://serifcolakel.vercel.app/" className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-900 hover:bg-gray-800">
                     Enroll Now
                 </a>
-                <a href="https://buildnextshop.com" className="inline-flex items-center font-semibold text-gray-900 hover:text-gray-800">
+                <a href="https://serifcolakel.vercel.app/" className="inline-flex items-center font-semibold text-gray-900 hover:text-gray-800">
                     Learn more
                 </a>
             </div>

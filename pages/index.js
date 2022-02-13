@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { getProductsInCollection } from "../lib/shopify";
 import Products from "../components/Products";
+import HeroSection from './../components/HeroSection';
 
 export default function Home({ products }) {
   return (
@@ -12,6 +13,7 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
+        <HeroSection />
         <Products products={products} />
       </main>
 
