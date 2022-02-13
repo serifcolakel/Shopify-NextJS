@@ -3,10 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { formatter } from '../utils/helpers'
 export const ProductCard = ({ product }) => {
-
-    const { handle, priceRange, title } = product;
-    const { altText, originalSrc } = product.images.edges[0].node;
-    const price = priceRange.minVariantPrice.amount;
+    const { handle, title } = product.node
+    const { altText, originalSrc } = product.node.images.edges[0].node;
+    const price = product.node.priceRange.maxVariantPrice.amount;
     return (
         <Link href={`/products/${handle}`}>
             <a className="group">
