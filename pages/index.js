@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { getProductsInCollection } from "../lib/shopify";
 import Products from "../components/Products";
 export default function Home({ products }) {
-  console.log("products", products);
+
   return (
     <div className={styles.container}>
       <Head>
