@@ -9,7 +9,7 @@ export default function RecommendedList({ current, products }) {
                 </h2>
                 <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {products.map(product => (
-                        product.node.id === current ? null : <ProductCard key={product.node.id} product={product} />
+                        product.node.id === current ? null : <ProductCard key={product.node.id} state={true} product={product} />
                     ))}
                 </div>
             </div>
